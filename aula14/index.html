@@ -1,0 +1,139 @@
+<!--Exercício  - Tangibilizando a ideia
+1- Tivemos uma reunião com o cliente e o analista de negócios nos trouxe algumas informações sobre ele.
+Nosso cliente trabalha com todo tipo de doce, e segundo ele tudo que procurarmos no google ele simplesmente faz. Esse(a) é fera!!!!
+Nosso cliente tem uma loja de doces e ele precisa de um app que facilite o trabalho dele enquanto vendedor e também do seu público.
+Nosso cliente é uma pessoa muito simples e se preocupa com o atendimento humanizado e entendendo isso já podemos concluir que não podemos jogar informações aleatórias e sim, sermos específicos nas opções que nosso app irá fornecer.
+Pesquise no google todo tipo de doce que nosso cliente poderia oferecer a seus clientes e coloque como opção de venda.
+
+2- Personalização fica a critério dos desenvolvedores neste primeiro momento.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    form {
+        background-color: rgb(236, 178, 171);
+        font-size: 14px;
+               
+    }
+    
+    h1 {
+        color: white;  
+        text-align: center;      
+       
+    }
+
+    input {
+        margin: 5px;
+       
+    }
+    select {
+        margin: 5px;
+       
+    }
+
+    button {
+        margin: 10px;
+        border-radius: 5px;
+   
+    }
+
+</style>
+<body>
+    <form>
+       
+        <h1>PEDIDO</h1>
+        <fieldset>
+            <legend>DADOS PESSOAIS</legend>
+            <div>
+                <label for="name">Nome do Cliente</label>
+                <input type="name" id="name" name="name" >
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" >
+            </div>
+            
+            <div>
+                <input type="checkbox" id="person">
+                <label for="person">Pessoa Juridica</label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>PRODUTOS</legend>
+            
+           
+                <label for="text">Selecione</label>
+                <select name="text" id="text">
+                    <option value="">Selecione</option>
+
+                <optgroup label="Festas Sociais e Casamentos">
+                    <option value="">Bem-casado</option>
+                    <option value="">Cupcakes</option>
+                    <option value="">Doces finos</option>
+                    <option value="">Macarons</option>
+                    <option value="">Suspiros</option>
+                </optgroup>
+                 <optgroup label="Festas Infantis">
+                    <option value="">Brigadeiros</option>
+                    <option value="">Docinhos modelados</option>
+                    <option value="">Doces com temas</option>
+                    <option value="">Cakepop</option>
+                    <option value="">Pipoca doce</option>
+                    <option value="">Pirulito de cristal</option>
+                </optgroup>
+                </select>
+                <div>
+                    <label for="qtd">Quantidade</label>
+                    <select name="qtd" id="qtd">
+                    <option value="qtd">0</option>
+                    <option value="qtd">10</option>
+                    <option value="qtd">20</option>
+                    <option value="qtd">30</option>
+                    <option value="qtd">40</option>
+                    <option value="qtd">50</option>
+                    <option value="qtd">60</option>
+                    <option value="qtd">70</option>
+                    <option value="qtd">80</option>
+                    <option value="qtd">90</option>
+                    <option value="qtd">100</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="option" name="diet" >
+                    <label for="diet">Sem Açucar</label>
+                </div> 
+            </fieldset>
+                <button type="submit">Adicionar ao Carrinho</button>
+       
+        <fieldset>
+            <legend>MENSAGEM</legend>
+                <div>
+                    <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+                </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>FORMAS DE PAGAMENTO</legend>
+            <div>
+                 <input type="radio" id="option" name="option" >
+                 <label for="option">À Vista</label>
+                 <input type="radio" id="option" name="option" >
+                 <label for="option">A Prazo</label>
+            </div>
+        </fieldset>
+        
+        <button type="reset">Finalizar o Pedido</button>
+        
+ 
+    </form>
+</body>
+</html>
